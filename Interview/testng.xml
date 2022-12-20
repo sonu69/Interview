@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite Name">
+
+<listeners>
+<listener class-name="testNg.Listen"/>
+</listeners>
+
+  <test thread-count="1" name="Test_1">
+    <classes>
+      <class name="testNg.Campaign">
+      <methods>
+      <include name="addCampaign"/>
+      </methods>
+	</class>
+    </classes>
+  </test>
+  
+    <test thread-count="2" name="Test_2">
+    <classes>
+      <class name="testNg.Template">
+      <methods>
+      <include name="addTemplate"/>
+      </methods>      
+      </class>
+    </classes>
+  </test>
+ 
+ 
+ 
+ 
+  
+</suite>
